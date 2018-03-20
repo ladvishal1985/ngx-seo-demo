@@ -1,0 +1,35 @@
+{
+    "plugins": [
+    "angular"
+  ],
+  "extends": [
+        "eslint:recommended"
+    ],
+  "globals": {
+    "angular": true,
+    "console": true
+  },
+  "rules":{
+    //General javascript rules
+    "semi":2,
+    "eqeqeq":1,
+    "no-new-object":1,
+    "jsx-quotes": [1, "prefer-single"],
+    "no-multi-str": 2,
+    "quotes": [1, "single"],
+    "space-infix-ops": 1,
+    "no-loop-func": 2,
+    //Naming conventions
+    "angular/controller-name": 2, //"controller-name": [2,"ui"],
+    "angular/directive-name": [2,"/^[a-z]+[A-Z0-9][a-z0-9]+[A-Za-z0-9]^/"],
+    "angular/filter-name": [2,"/^[a-z]+[A-Z0-9][a-z0-9]+[A-Za-z0-9]^/"],
+    "angular/service-name": 2,
+    "angular/component-name": 2,
+    "angular/file-name": 1,
+    "angular/module-name": 2,
+    //Best Practices
+    "angular/controller-as": 2,
+    "angular/no-controller": 1,
+    "angular/directive-restrict": 2
+  }
+}

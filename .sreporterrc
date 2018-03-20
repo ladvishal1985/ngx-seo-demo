@@ -1,0 +1,13 @@
+{
+      "projectName": "Sonar Web Front-End Reporter",
+      "eslint": {
+        "src": "out/src/**/*.js",
+        "report": "reports/eslint.json",
+        "rulesFile": ".eslintrc"
+      },
+      "tslint": {
+        "src": "src/**/*.ts",
+        "report": "reports/tslint.json",
+        "rulesFile": "tslint.json"
+      }
+}

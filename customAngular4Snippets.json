@@ -1,0 +1,203 @@
+{
+    "customList": [
+        {
+            "prefix": "aComponent",
+            "body": [
+                "import { Component, OnInit } from '@angular/core';",
+                "",
+                "@Component({",
+                "\tselector: 'selector-name',",
+                "\ttemplateUrl: 'CustomName.component.html'",
+                "})",
+                "export class CustomNameComponent implements OnInit {",
+                "\tconstructor() { }",
+                "",
+                "\tngOnInit() { }",
+                "}"
+            ]
+        },
+        {
+            "prefix": "aComponentHTML",
+            "body": [
+                "<p>Sample Component text</p>"
+            ]
+        },
+        {
+            "prefix": "aDirective",
+            "body": [
+                "import { Directive } from '@angular/core';",
+                "",
+                "@Directive({ selector: '[selector-name]' })",
+                "export class NameDirective {",
+                "\tconstructor() { }",
+                "}"
+            ]
+        },
+        {
+            "prefix": "aComponentCSS",
+            "body": [
+                ":host {",
+                "  flex: 1 1 100%;",
+                "  display: flex;",
+                "  flex-flow: column;",
+                "}"
+            ]
+        },
+        {
+            "prefix": "aService",
+            "body": [
+                "import { Injectable } from '@angular/core';",
+                "",
+                "@Injectable()",
+                "export class CustomNameService {",
+                "",
+                "\tconstructor() { }",
+                "}"
+            ]
+        },
+        {
+            "prefix": "aPipe",
+            "body": [
+                "import { Pipe, PipeTransform } from '@angular/core';",
+                "",
+                "@Pipe({",
+                "\tname: 'name'",
+                "})",
+                "",
+                "export class CustomNamePipe implements PipeTransform {",
+                "\ttransform(value: any, args: any[]): any {",
+                "\t\t",
+                "\t}",
+                "}"
+            ]
+        },
+        {
+            "prefix": "aRouting",
+            "body": [
+                "import { NgModule } from '@angular/core';",
+                "import { Routes, RouterModule } from '@angular/router';",
+                "",
+                "import { NameComponent } from './CustomName.component';",
+                "",
+                "const routes: Routes = [",
+                "{ path: 'path', component: CustomName },",
+                "];",
+                "",
+                "@NgModule({",
+                "imports: [RouterModule.forChild(routes)],",
+                "exports: [RouterModule],",
+                "})",
+                "export class CustomNameRoutingModule { }",
+                "",
+                "export const routedComponents = [CustomName];"
+            ]
+        },
+        {
+            "prefix": "aHttpGet",
+            "body": [
+                "return this.http.get('url')",
+                ".map((response: Response) => response.json());"
+            ]
+        },
+        {
+            "prefix": "aSubscribe",
+            "body": [
+                "this.service.function",
+                ".subscribe(arg => this.property = arg);"
+            ]
+        },
+        {
+            "prefix": "aComponentRoot",
+            "body": [
+                "import { Component } from '@angular/core';",
+                "",
+                "@Component({",
+                 "\tselector: 'prefix-app',",
+                 "\ttemplate: `",
+                  "\t<router-outlet></router-outlet>",
+                  "`",
+                "})",
+                "export class CustomNameComponent { }"
+            ]
+        },
+        {
+            "prefix": "aModuleRoot",
+            "body": [
+                "import { NgModule } from '@angular/core';",
+                "import { BrowserModule  } from '@angular/platform-browser';",
+                "import { HttpModule } from '@angular/http';",
+                "",
+                "import { AppComponent } from './App.component';",
+                "import { AppRoutingModule } from './App.routing'; //TODO: Create App.routing",
+                "",
+                "@NgModule({",
+                "\timports: [",
+                "\tBrowserModule,",
+                "\tHttpModule,",
+                "\tAppRoutingModule,",
+                "],",
+                "declarations: [AppComponent],",
+                "providers: [/* TODO: Providers go here */],",
+                "bootstrap: [AppComponent],",
+                "})",
+                "export class CustomNameModule { }"
+            ]
+        },
+        {
+            "prefix": "aModule",
+            "body": [
+                "import { NgModule } from '@angular/core';",
+                "",
+                "import { NameComponent } from './name.component';",
+                "",
+                "@NgModule({",
+                 "\timports: [],",
+                 "\texports: [],",
+                 "\tdeclarations: [NameComponent],",
+                 "\tproviders: [],",
+                "})",
+                "export class CustomNameModule { }"
+            ]
+        },
+        {
+            "prefix": "aTestClass",
+            "body": [
+               "import { SomeComponent } from './componentNameToBeReplaced';",
+               "//const expect = require('chai').expect;",
+                "",
+                "var comp : SomeComponent;",
+                "describe('Test Suite Name', function () {",
+                
+                "\tbeforeEach(() => {",
+                "\t\tcomp = new SomeComponent()",
+                "\t});",
+
+                "\tit('Test Description', () => {",
+                    "\t\tcomp.ngOnInit();",
+                    "\t\texpect('').toBe('');",
+                "\t});",
+                "});"
+            ]
+        },
+        {
+            "prefix": "testCaseDefaultTemplate",
+            "body": [
+               "import { SomeComponent } from './componentNameToBeReplaced';",
+               "//const expect = require('chai').expect;",
+                "",
+                "var comp : SomeComponent;",
+                "describe('Test Suite Name', function () {",
+                
+                "\tbeforeEach(() => {",
+                "\t\tcomp = new SomeComponent()",
+                "\t});",
+
+                "\tit('Test Description', () => {",
+                    "\t\tcomp.ngOnInit();",
+                    "\t\texpect('').toBe('');",
+                "\t});",
+                "});"
+            ]
+        }
+    ]
+}
