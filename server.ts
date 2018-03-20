@@ -26,10 +26,8 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/mai
 
 const { provideModuleMap } = require('@nguniversal/module-map-ngfactory-loader');
 
-app.configure(function(){ 
-  app.use(require('prerender-node').set('prerenderToken', 'tC4oIuN2oCIVolr5qqqy')); 
-  //app.use(express.static("public")); app.use(app.router); 
-});
+app.use(require('prerender-node').set('prerenderToken', 'tC4oIuN2oCIVolr5qqqy')); 
+
 
 app.engine('html', (_, options, callback) => {
   renderModuleFactory(AppServerModuleNgFactory, {
