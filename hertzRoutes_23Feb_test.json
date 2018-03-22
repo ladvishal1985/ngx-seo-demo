@@ -1,0 +1,9 @@
+[
+  
+  {
+    "path" : "dashboard" 
+  },
+  {
+    "path": "heroes"
+  }
+]
