@@ -48,7 +48,7 @@ app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
 
 const sitemap = sm.createSitemap({
-  hostname : 'http://localhost:4000',
+  hostname : 'https://ngx-seo-demo.herokuapp.com',
   cacheTime : 1000 * 60 * 24,  // keep the sitemap cached for 24 hours
   urls: [
     { url: '/dashboard/',  changefreq: 'daily', priority: 0.3 },
