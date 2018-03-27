@@ -4,7 +4,8 @@ import { Location } from '@angular/common';
 
 import { Hero }         from '../hero';
 import { HeroService }  from '../hero.service';
-
+import { Title, Meta } from '@angular/platform-browser';
+import { MetaService } from '../services/meta.service';
 @Component({
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
@@ -16,10 +17,15 @@ export class HeroDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private heroService: HeroService,
-    private location: Location
+    private location: Location,
+    private title: Title, 
+    private metaService: MetaService
   ) {}
 
   ngOnInit(): void {
+    this.title.setTitle('Hero Detail');
+    this.metaService.setMeta('title','Hero Detail');
+    this.metaService.setMeta('description','Heroe Detail: Tours of Heroes');
     this.getHero();
   }
 

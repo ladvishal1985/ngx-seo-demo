@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { Title, Meta } from '@angular/platform-browser';
+import { MetaService } from '../services/meta.service';
 
 @Component({
   selector: 'app-heroes',
@@ -11,9 +13,12 @@ import { HeroService } from '../hero.service';
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService, private title: Title, private metaService: MetaService) { }
 
   ngOnInit() {
+    this.title.setTitle('Heroes List');
+    this.metaService.setMeta('title','Heroes List');
+    this.metaService.setMeta('description','Heroes List: Tours of Heroes');
     this.getHeroes();
   }
 

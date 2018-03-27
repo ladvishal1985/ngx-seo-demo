@@ -9,6 +9,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent }         from './app.component';
+import { MetaService } from './services/meta.service';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { HeroesComponent }      from './heroes/heroes.component';
@@ -42,7 +43,7 @@ import { isPlatformBrowser } from '@angular/common';
     MessagesComponent,
     HeroSearchComponent
   ],
-  providers: [ HeroService, MessageService ],
+  providers: [ HeroService, MessageService , MetaService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { 
