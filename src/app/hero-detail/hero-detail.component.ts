@@ -2,14 +2,14 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Hero }         from '../hero';
-import { HeroService }  from '../hero.service';
+import { Hero } from '../hero';
+import { HeroService } from '../hero.service';
 import { Title, Meta } from '@angular/platform-browser';
 import { MetaService } from '../services/meta.service';
 @Component({
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
-  styleUrls: [ './hero-detail.component.css' ]
+  styleUrls: ['./hero-detail.component.scss']
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
@@ -18,14 +18,14 @@ export class HeroDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private heroService: HeroService,
     private location: Location,
-    private title: Title, 
+    private title: Title,
     private metaService: MetaService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.title.setTitle('Hero Detail');
-    this.metaService.setMeta('title','Hero Detail');
-    this.metaService.setMeta('description','Heroe Detail: Tours of Heroes');
+    this.metaService.setMeta('title', 'Hero Detail');
+    this.metaService.setMeta('description', 'Heroe Detail: Tours of Heroes');
     this.getHero();
   }
 
@@ -39,7 +39,7 @@ export class HeroDetailComponent implements OnInit {
     this.location.back();
   }
 
- save(): void {
+  save(): void {
     this.heroService.updateHero(this.hero)
       .subscribe(() => this.goBack());
   }

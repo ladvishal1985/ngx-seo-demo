@@ -1,0 +1,59 @@
+.idLabel {
+    display: inline-block;
+    width: 50%;
+    margin: .5em 0;
+    color: black;
+    font-weight: bold;
+}
+
+.ratingLabel {
+    display: inline-block;
+    width: 50%;
+    margin: .5em 0;
+    color: black;
+    font-weight: bold;
+}
+
+.nameLabel {
+    display: inline-block;
+    width: 50%;
+    margin: .5em 0;
+    color: black;
+    font-weight: bold;
+}
+
+.descriptionLabel {
+    display: inline-block;
+    width: 50%;
+    margin: .5em 0;
+    color: black;
+    font-weight: bold;
+}
+
+.imageHero {
+    border-radius: 4px;
+}
+
+.buttonFamily {
+    width: 150px;
+    color: black;
+    font-weight: bold;
+}
+
+.leftpane {
+    margin-top: 35px;
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+  
+.rightpane {
+    margin-top: 50px;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+}
+

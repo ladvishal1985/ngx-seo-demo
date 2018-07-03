@@ -1,0 +1,92 @@
+body{
+    color: #fff;
+    
+}
+
+.form-control{
+    height: 35px;
+    background: #f2f2f2;
+    box-shadow: none !important;
+    border: none;
+}
+
+.form-control:focus{
+    background: #e2e2e2;
+}
+
+.form-control, .btn{        
+    border-radius: 3px;
+}
+
+.signup-form{
+    width: 390px;
+    margin: 30px auto;
+}
+
+.signup-form form{
+    margin-top: 100px;
+    color:black;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background-color: rgb(78, 146, 235);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.signup-form h2 {
+    color:black;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.signup-form .form-group{
+    margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"]{
+    margin-top: 3px;
+}
+.signup-form .row div:first-child{
+    padding-right: 10px;
+}
+.signup-form .row div:last-child{
+    padding-left: 10px;
+}
+.signup-form .btn{        
+    font-size: 16px;
+    font-weight: bold;
+    background:forestgreen;
+    border: none;
+    min-width: 140px;
+    text-align: center;
+}
+.signup-form .btn:hover, .signup-form .btn:focus{
+    background:forestgreen !important;
+    outline: none;
+    text-align: center;
+}
+.signup-form a{
+    color: #fff;
+    text-decoration: none;
+}
+.signup-form a:hover{
+    text-decoration: none;
+}
+.signup-form form a{
+    color: forestgreen;
+    text-decoration: none;
+}	
+
+.signup-form .hint-text {
+    padding-bottom: 15px;
+    text-align: center;
+    color: black;
+}
+
+.loginButton{
+    background-color: red;
+    text-decoration: none;
+}

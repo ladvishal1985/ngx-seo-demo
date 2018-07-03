@@ -1,11 +1,35 @@
-<div *ngIf="hero">
-  <h2>{{ hero.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
+<div class="leftpane">
   <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name"/>
-    </label>
+    <img class="imageHero" src="{{hero.image}}" width="500" height="500">
   </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
+</div>
+<div class="rightpane">
+  <div *ngIf="hero">
+    <h2>{{ hero.name | uppercase }} Details</h2>
+    <div>
+      <label class="idLabel">ID:
+        <b>{{hero.id}}</b>
+      </label>
+    </div>
+    <div>
+      <label class="nameLabel">Name:
+        <b>{{hero.name}}</b>
+      </label>
+    </div>
+    <div>
+      <label class="ratingLabel">Rating:
+        <b>{{hero.rating}}</b>
+      </label>
+    </div>
+    <div>
+      <label class="descriptionLabel">Description:
+        <b>{{hero.description}}</b>
+      </label>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <button type="button" class="btn btn-primary buttonFamily" title="Go Back" (click)="goBack()">Go Back</button>
+  <br>
 </div>

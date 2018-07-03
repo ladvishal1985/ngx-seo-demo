@@ -1,0 +1,28 @@
+.appTitle {
+    text-align: center;
+    font-size: 40px;
+    color: #999;
+    margin-bottom: 0;
+    font-weight: bold;
+    background-color: black;
+}
+
+.main-container {
+    padding: 0 50px; 
+    margin: 0 auto;
+    min-height: 550px;   
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+  
+* {
+    box-sizing: border-box;
+}
