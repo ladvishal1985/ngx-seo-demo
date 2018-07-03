@@ -9,7 +9,7 @@ import { LinksConfigConst } from '../../configuration/link-configuration.const';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  abc = LinksConfigConst;
+  linkConfigObj = LinksConfigConst;
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {

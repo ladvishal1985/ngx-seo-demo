@@ -14,11 +14,12 @@
 <br>
 <div class="thumbDiv">
   <div class="divDisp" *ngFor="let hero of heroes;let i=index" (click)="heroImgSelectedEvent(hero)">
-    <a routerLink="/detail/{{hero.id}}">
-      <img class="imgHero" src="{{hero.image}}" width="150px" height="190px">
-    </a>
     <br> {{hero.id}}
     <br> {{hero.name}}
+    <br>
+    <a routerLink="/detail/{{hero.id}}">
+      <img class="imgHero" src="{{hero.image}}" width="248px" height="290px">
+    </a>
     <button type="button" class="btn btn-danger delete" title="Delete This Hero" (click)="delete(hero)">Delete</button>
   </div>
 </div>

@@ -2,9 +2,9 @@ button.delete {
     position: inherit;
     font-weight: bold;
     font-size: 14px;
-    width: 150px;
+    width: 248px;
     // margin-top: 0px;
-    // margin-left: 0px;
+    margin-left: -1px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 4px;
@@ -22,16 +22,17 @@ button.add {
     // left: 200px;
     position: relative;
     cursor: pointer;
-    // border: 1px solid grey;
+    border: 2px solid grey;
     border-radius: 4px;
-    width: 150px;
-    height: 265px;
+    width: 250px;
+    height: 385px;
     color: black;
     margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
     // margin-bottom: 20px;
     font-weight: bold;
+    background-color: cadetblue;
 }
   
 .addDiv {
@@ -61,6 +62,7 @@ button.add {
 
 .imgHero {
   // margin-top: -100px;
+  margin-left: -1px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }

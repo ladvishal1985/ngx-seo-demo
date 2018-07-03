@@ -13,7 +13,7 @@ import { LinksConfigConst } from '../../configuration/link-configuration.const';
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
-  abc = LinksConfigConst;
+  linkConfigObj = LinksConfigConst;
   constructor(private heroService: HeroService, private title: Title, private metaService: MetaService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {

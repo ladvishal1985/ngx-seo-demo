@@ -7,7 +7,7 @@ import { LinksConfigConst } from '../../configuration/link-configuration.const';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  abc = LinksConfigConst;
+  linkConfigObj = LinksConfigConst;
   constructor() { }
 
   ngOnInit() {

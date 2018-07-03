@@ -7,7 +7,7 @@ import { LinksConfigConst } from '../../configuration/link-configuration.const';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  abc = LinksConfigConst;
+  linkConfigObj = LinksConfigConst;
   constructor() { }
 
   ngOnInit() {
