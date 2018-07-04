@@ -19,7 +19,7 @@ import { MessageService } from './message.service';
 import { MessagesComponent } from './messages/messages.component';
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { HeroViewComponent } from './hero-view/hero-view.component';
+// import { HeroViewComponent } from './hero-view/hero-view.component';
 import { HeroThumbComponent } from './hero-thumb/hero-thumb.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -52,7 +52,7 @@ import { ContactComponent } from './contact/contact.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    HeroViewComponent,
+    // HeroViewComponent,
     HeroThumbComponent,
     HeaderComponent,
     NavigationComponent,
