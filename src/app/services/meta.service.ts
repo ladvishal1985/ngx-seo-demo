@@ -4,7 +4,7 @@ import { DOCUMENT } from '@angular/platform-browser';
 @Injectable()
 export class MetaService {
 
-  constructor( @Inject(DOCUMENT) private document) {
+  constructor(@Inject(DOCUMENT) private document) {
 
   }
 

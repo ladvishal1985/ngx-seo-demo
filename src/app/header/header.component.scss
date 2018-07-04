@@ -1,0 +1,17 @@
+.leftpane {
+    width: 75%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+    background-color: black;
+}
+  
+.rightpane {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+    background-color: black;
+}
+

@@ -3,21 +3,23 @@ import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 import { Title, Meta } from '@angular/platform-browser';
 import { MetaService } from '../services/meta.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { LinksConfigConst } from '../../configuration/link-configuration.const';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: [ './dashboard.component.css' ]
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
-
-  constructor(private heroService: HeroService, private title: Title, private metaService: MetaService) { }
+  linkConfigObj = LinksConfigConst;
+  constructor(private heroService: HeroService, private title: Title, private metaService: MetaService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.title.setTitle('Dashboard');
-    this.metaService.setMeta('title','Dashboard');
-    this.metaService.setMeta('description','Dashboard: Tours of Heroes');
+    this.metaService.setMeta('title', 'Dashboard');
+    this.metaService.setMeta('description', 'Dashboard: Tours of Heroes');
     this.getHeroes();
   }
 

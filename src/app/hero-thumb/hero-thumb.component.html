@@ -1,0 +1,25 @@
+<div class="addDiv">
+  <h2>My Heroes</h2>
+  <br>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="hero">Hero Name : </label>
+      <input type="text" class="form-control" id="hero" #heroName autocomplete="off">
+    </div>
+    <button type="button" class="btn btn-success add" (click)="add(heroName.value); heroName.value=''" title="Add A New Hero">
+      Add
+    </button>
+  </form>
+</div>
+<br>
+<div class="thumbDiv">
+  <div class="divDisp" *ngFor="let hero of heroes;let i=index" (click)="heroImgSelectedEvent(hero)">
+    <br> {{hero.id}}
+    <br> {{hero.name}}
+    <br>
+    <a routerLink="/detail/{{hero.id}}">
+      <img class="imgHero" src="{{hero.image}}" width="248px" height="290px">
+    </a>
+    <button type="button" class="btn btn-danger delete" title="Delete This Hero" (click)="delete(hero)">Delete</button>
+  </div>
+</div>

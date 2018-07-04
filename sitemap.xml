@@ -1,0 +1,109 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/dashboard</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/heroes</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/11</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/12</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/13</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/14</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/15</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/16</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/17</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/18</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/19</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/detail/20</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
+    <!-- New Components -->
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/signup</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/login</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/about</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+
+    <url>
+        <loc>http://ngx-seo-demo.herokuapp.com/contact</loc>
+        <lastmod>2018-07-04T03:50:27+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+
+</urlset>
