@@ -14,11 +14,14 @@
 .dash-widget {
     position: relative;
     outline: none;
+    // box-shadow: inset 0 0 0 200px rgba(0,0,0,.5);
+    background-color:rgb(32, 11, 76) ;
+    color: white;
+    text-decoration: none;
+    
 }
 
-.icon-label {
-    opacity: .8;
-}
+
 
 .box_1 { 
     display: block;
@@ -40,7 +43,14 @@
 }
 
 .label-inverse {
-    background-color: #ffffff;
-    color: #666666;
+    // background-color: #ffffff;
+    color:  white;
     border-radius: 4px;
 }
+
+.heroImage {
+    margin-bottom: 50px;
+    margin-top: -110px;
+    // width: 100%;
+}
+

@@ -1,8 +1,8 @@
-<div class="addDiv">
+<div class="addDiv" itemscope itemtype="http://schema.org/Things">
   <h2>My Heroes</h2>
   <br>
   <form class="form">
-    <div class="form-group">
+    <div class="form-group" text>
       <label for="hero">Hero Name : </label>
       <input type="text" class="form-control" id="hero" #heroName autocomplete="off">
     </div>
@@ -12,13 +12,15 @@
   </form>
 </div>
 <br>
-<div class="thumbDiv">
+<div itemscope itemtype="http://schema.org/Product" class="thumbDiv">
   <div class="divDisp" *ngFor="let hero of heroes;let i=index" (click)="heroImgSelectedEvent(hero)">
-    <br> {{hero.id}}
-    <br> {{hero.name}}
+    <br>
+    <span itemprop="productID">{{hero.id}}</span>
+    <br>
+    <span itemprop="name">{{hero.name}}</span>
     <br>
     <a routerLink="/detail/{{hero.id}}">
-      <img class="imgHero" src="{{hero.image}}" width="248px" height="290px">
+      <img itemprop="photo" class="imgHero" src="{{hero.image}}" width="248px" height="290px">
     </a>
     <button type="button" class="btn btn-danger delete" title="Delete This Hero" (click)="delete(hero)">Delete</button>
   </div>

@@ -1,25 +1,25 @@
-<div class="footer-distributed">
-  <div class="footer-right">
-    <a href="http://www.facebook.com" name="facebook">
-      <i class="fa fa-facebook"></i>
+<div itemscope itemtype="http://schema.org/Thing" class="footer-distributed">
+  <div class="footer-right" itemprop="children" itemscope itemtype="http://schema.org/Product">
+    <a itemprop="url" href="http://www.facebook.com" tabindex="0" name="facebook">
+      <i itemprop="logo" class="fa fa-facebook"></i>
     </a>
-    <a href="http://www.twitter.com" name="twitter">
-      <i class="fa fa-twitter"></i>
+    <a itemprop="url" href="http://www.twitter.com" tabindex="0" name="twitter">
+      <i itemprop="logo" class="fa fa-twitter"></i>
     </a>
-    <a href="http://www.linkedin.com" name="linkedin">
-      <i class="fa fa-linkedin"></i>
+    <a itemprop="url" href="http://www.linkedin.com" tabindex="0" name="linkedin">
+      <i itemprop="logo" class="fa fa-linkedin"></i>
     </a>
-    <a href="http://www.github.com" name="github">
-      <i class="fa fa-github"></i>
+    <a itemprop="url" href="http://www.github.com" tabindex="0" name="github">
+      <i itemprop="logo" class="fa fa-github"></i>
     </a>
   </div>
   <div class="footer-left">
     <p class="footer-links">
-      <a routerLink="{{linkConfigObj.footer.about.route}}">{{linkConfigObj.footer.about.label}}</a>
+      <a itemprop="url" routerLink="{{linkConfigObj.footer.about.route}}">{{linkConfigObj.footer.about.label}}</a>
       <br>
-      <a routerLink="{{linkConfigObj.footer.contact.route}}">{{linkConfigObj.footer.contact.label}}</a>
+      <a itemprop="url" routerLink="{{linkConfigObj.footer.contact.route}}">{{linkConfigObj.footer.contact.label}}</a>
     </p>
     <hr>
-    <p>Tour of Heroes &copy; 2018</p>
+    <p itemprop="description" class="footer-links">Tour of Heroes &copy; 2018</p>
   </div>
 </div>

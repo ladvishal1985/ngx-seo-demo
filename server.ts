@@ -9,12 +9,16 @@ import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
 
+const compression = require('compression');
+
 const sm = require('sitemap');
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
 // Express server
 const app = express();
+
+app.use(compression());
 
 const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
@@ -27,7 +31,7 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/mai
 
 const { provideModuleMap } = require('@nguniversal/module-map-ngfactory-loader');
 
-app.use(require('prerender-node').set('prerenderToken', 'tC4oIuN2oCIVolr5qqqy')); 
+app.use(require('prerender-node').set('prerenderToken', 'tC4oIuN2oCIVolr5qqqy'));
 
 
 app.engine('html', (_, options, callback) => {
@@ -48,22 +52,22 @@ app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
 
 const sitemap = sm.createSitemap({
-  hostname : 'https://ngx-seo-demo.herokuapp.com',
-  cacheTime : 1000 * 60 * 24,  // keep the sitemap cached for 24 hours
+  hostname: 'https://ngx-seo-demo.herokuapp.com',
+  cacheTime: 1000 * 60 * 24,  // keep the sitemap cached for 24 hours
   urls: [
-    { url: '/dashboard/',  changefreq: 'daily', priority: 0.3 },
-    { url: '/heroes/',  changefreq: 'monthly',  priority: 0.7 },
+    { url: '/dashboard/', changefreq: 'daily', priority: 0.3 },
+    { url: '/heroes/', changefreq: 'monthly', priority: 0.7 },
     { url: '/detail/12' } // changefreq: 'weekly',  priority: 0.5 
   ]
 });
 
-app.get('/sitemap.xml', function(req, res, next){
-  sitemap.toXML( function (err, xml) {
+app.get('/sitemap.xml', function (req, res, next) {
+  sitemap.toXML(function (err, xml) {
     if (err) {
       return res.status(500).end();
     }
     res.header('Content-Type', 'application/xml');
-    res.send( xml );
+    res.send(xml);
   });
 });
 // Server static files from /browser
@@ -75,7 +79,7 @@ app.get('*', (req, res) => {
 });
 
 
-  
+
 
 
 // Start up the Node server
