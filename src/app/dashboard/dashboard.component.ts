@@ -20,6 +20,7 @@ export class DashboardComponent implements OnInit {
     this.title.setTitle('Dashboard');
     this.metaService.setMeta('title', 'Dashboard');
     this.metaService.setMeta('description', 'Dashboard: Tours of Heroes');
+    this.metaService.setMeta('theme-color', '#D4D4D4');
     this.getHeroes();
   }
 
