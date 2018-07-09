@@ -10,6 +10,9 @@
 
     <url>
         <loc>http://ngx-seo-demo.herokuapp.com/dashboard</loc>
+        <image:image>
+            <image:loc>http://ngx-seo-demo.herokuapp.com/dashboard/heroes.jpg</image:loc>
+        </image:image>
         <lastmod>2018-07-04T03:50:27+00:00</lastmod>
         <priority>0.80</priority>
     </url>

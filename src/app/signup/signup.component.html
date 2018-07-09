@@ -1,7 +1,7 @@
-<div class="signup-form">
+<div itemscope itemtype="http://schema.org/Text" class="signup-form">
   <form>
-    <h2>Sign Up</h2>
-    <p>Please fill in this form to create an account!</p>
+    <h2 itemprop="name">Sign Up</h2>
+    <p itemprop="description">Please fill in this form to create an account!</p>
     <br>
     <div class="form-group">
       <input type="text" class="form-control" name="name" placeholder="Name" required="required">
@@ -20,9 +20,9 @@
     </div>
   </form>
   <div class="hint-text">
-    <label>Already have an account? </label>
+    <label itemprop="name">Already have an account? </label>
     <button class="loginButton">
-      <a routerLink="{{linkConfigObj.header.login.route}}">Log In here</a>
+      <a itemprop="url" routerLink="{{linkConfigObj.header.login.route}}">Log In here</a>
     </button>
   </div>
 </div>

@@ -1,6 +1,6 @@
-<div class="login-form">
+<div itemscope itemtype="http://schema.org/Text" class="login-form">
   <form>
-    <h2 class="text-center">Log in</h2>
+    <h2 itemprop="name" class="text-center">Log in</h2>
     <div class="form-group">
       <input type="text" class="form-control" placeholder="Username" required="required">
     </div>
@@ -15,7 +15,7 @@
         <input type="checkbox"> Remember me</label>
     </div>
   </form>
-  <p class="text-center">
-    <a class="signupURL" routerLink="{{linkConfigObj.header.signup.route}}">Create an Account</a>
+  <p class="text-center" itemprop="children" itemscope itemtype="http://schema.org/Product">
+    <a itemprop="url" class="signupURL" routerLink="{{linkConfigObj.header.signup.route}}">Create an Account</a>
   </p>
 </div>

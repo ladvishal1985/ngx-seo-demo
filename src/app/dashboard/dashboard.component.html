@@ -1,61 +1,63 @@
-<div class="col-lg-12 mainDiv">
+<div itemscope itemtype="http://schema.org/Things" class="col-lg-12 mainDiv">
 
-  <div class="panel panel-info">
+  <div class="heroImage">
+    <img class="heroImageTag" src="../../assets/images/heroes1.jpg" alt="hero" width="100%" height="500px">
+  </div>
+
+  <div class="panel">
 
     <div class="panel-heading">
-      <h3 class="panel-title">
-        <span class="glyphicon glyphicon-dash"></span> Heros Dashboard
-      </h3>
+      <h3 itemprop="name" class="panel-title">Heros Dashboard</h3>
     </div>
 
     <div class="panel-body">
 
-      <div class="row">
+      <div class="row" itemprop="children" itemscope itemtype="http://schema.org/Product">
 
         <div class="col-lg-3">
-          <a routerLink="{{linkConfigObj.footer.about.route}}" class="btn btn-info btn-lg btn-block dash-widget" role="button">
+          <a itemprop="url" routerLink="{{linkConfigObj.footer.about.route}}" class="btn btn-lg btn-block dash-widget" role="button">
             <div class="box_1">
-              <span class="fa fa-clock-o fa-3x"></span>
+              <span itemprop="logo" class="fa fa-clock-o fa-3x"></span>
             </div>
-            <div class="icon-label box_2">Time Zone</div>
+            <div itemprop="name" class="icon-label box_2">Time Zone</div>
             <div class="box_3">
-              <span class="label label-inverse">Western</span>
+              <span itemprop="name" class="label label-inverse">Western</span>
             </div>
           </a>
         </div>
 
         <div class="col-lg-3">
-          <a routerLink="{{linkConfigObj.footer.about.route}}" class="btn btn-info btn-lg btn-block dash-widget" role="button">
+          <a itemprop="url" routerLink="{{linkConfigObj.footer.about.route}}" class="btn btn-lg btn-block dash-widget" role="button">
             <div class="box_1">
-              <span class="fa fa-desktop fa-3x"></span>
+              <span itemprop="logo" class="fa fa-desktop fa-3x"></span>
             </div>
-            <div class="icon-label box_2">Platform</div>
+            <div itemprop="name" class="icon-label box_2">Platform</div>
             <div class="box_3">
-              <span class="label label-inverse">Windows / MacOS</span>
+              <span itemprop="name" class="label label-inverse">Windows / MacOS</span>
             </div>
           </a>
         </div>
 
         <div class="col-lg-3">
-          <a routerLink="{{linkConfigObj.header.heroes.route}}" class="btn btn-info btn-lg btn-block dash-widget" role="button">
+          <a itemprop="url" routerLink="{{linkConfigObj.header.heroes.route}}" class="btn btn-lg btn-block dash-widget" role="button">
             <div class="box_1">
-              <span class="fa fa-print fa-3x"></span>
+              <span itemprop="logo" class="fa fa-print fa-3x"></span>
             </div>
-            <div class="icon-label box_2">Total Fixed Heros</div>
+            <div itemprop="name" class="icon-label box_2">Total Fixed Heros</div>
             <div class="box_3">
-              <span class="label label-inverse">10</span>
+              <span itemprop="name" class="label label-inverse">10</span>
             </div>
           </a>
         </div>
 
         <div class="col-lg-3">
-          <a routerLink="{{linkConfigObj.footer.contact.route}}" class="btn btn-info btn-lg btn-block dash-widget" role="button">
+          <a itemprop="url" routerLink="{{linkConfigObj.footer.contact.route}}" class="btn btn-lg btn-block dash-widget" role="button">
             <div class="box_1">
-              <span class="fa fa-suitcase fa-3x"></span>
+              <span itemprop="logo" class="fa fa-suitcase fa-3x"></span>
             </div>
-            <div class="icon-label box_2">Business and Enquiry</div>
+            <div itemprop="name" class="icon-label box_2">Business and Enquiry</div>
             <div class="box_3">
-              <span class="label label-inverse">Accenture</span>
+              <span itemprop="name" class="label label-inverse">Accenture</span>
             </div>
           </a>
         </div>

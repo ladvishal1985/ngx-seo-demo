@@ -1,29 +1,37 @@
-<div class="leftpane">
+<div itemscope itemtype="http://schema.org/Product" class="leftpane">
   <div *ngIf="hero">
-    <img class="imageHero" src="{{hero.image}}" width="500" height="500">
+    <img itemprop="photo" class="imageHero" src="{{hero.image}}" width="500" height="500">
   </div>
 </div>
-<div class="rightpane">
+<div itemscope itemtype="http://schema.org/Product" class="rightpane">
   <div *ngIf="hero">
-    <h2>{{ hero.name | uppercase }} Details</h2>
+    <h2 itemprop="name">
+      {{ hero.name | uppercase }} Details
+    </h2>
     <div>
       <label class="idLabel">ID:
-        <b>{{hero.id}}</b>
+        <b itemprop="productID">
+          {{hero.id}}
+        </b>
       </label>
     </div>
     <div>
       <label class="nameLabel">Name:
-        <b>{{hero.name}}</b>
+        <b itemprop="name">
+          {{hero.name}}
+        </b>
       </label>
     </div>
-    <div>
+    <div itemprop="children" itemscope itemtype="http://schema.org/AggregateRating">
       <label class="ratingLabel">Rating:
-        <b>{{hero.rating}}</b>
+        <b itemprop="ratingValue">
+          {{hero.rating}}
+        </b>
       </label>
     </div>
     <div>
       <label class="descriptionLabel">Description:
-        <b>{{hero.description}}</b>
+        <b itemprop="description">{{hero.description}}</b>
       </label>
     </div>
   </div>
