@@ -1,43 +1,46 @@
-<div itemscope itemtype="http://schema.org/Product" class="leftpane">
-  <div *ngIf="hero">
+<section itemscope itemtype="http://schema.org/Product" class="leftpane">
+  <section *ngIf="hero">
+    <figure>
     <img itemprop="photo" class="imageHero" src="{{hero.image}}" width="500" height="500">
-  </div>
-</div>
-<div itemscope itemtype="http://schema.org/Product" class="rightpane">
-  <div *ngIf="hero">
+  </figure>
+  </section>
+</section>
+<section itemscope itemtype="http://schema.org/Product" class="rightpane">
+  <section *ngIf="hero">
     <h2 itemprop="name">
       {{ hero.name | uppercase }} Details
     </h2>
-    <div>
+    <section>
       <label class="idLabel">ID:
         <b itemprop="productID">
           {{hero.id}}
         </b>
       </label>
-    </div>
-    <div>
+    </section>
+    <section>
       <label class="nameLabel">Name:
         <b itemprop="name">
           {{hero.name}}
         </b>
       </label>
-    </div>
-    <div itemprop="children" itemscope itemtype="http://schema.org/AggregateRating">
+    </section>
+    <section itemprop="children" itemscope itemtype="http://schema.org/AggregateRating">
       <label class="ratingLabel">Rating:
         <b itemprop="ratingValue">
           {{hero.rating}}
         </b>
       </label>
-    </div>
+    </section>
     <div>
       <label class="descriptionLabel">Description:
         <b itemprop="description">{{hero.description}}</b>
       </label>
     </div>
-  </div>
+  </section>
   <br>
   <br>
   <br>
   <button type="button" class="btn btn-primary buttonFamily" title="Go Back" (click)="goBack()">Go Back</button>
   <br>
-</div>
+  <noscript>Your browser is not compatible to view the page.</noscript>
+</section>

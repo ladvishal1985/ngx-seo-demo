@@ -3,6 +3,7 @@ button.delete {
     font-weight: bold;
     font-size: 14px;
     width: 248px;
+    margin-top: -20px;
     margin-left: -1px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -18,7 +19,7 @@ button.add {
 .divDisp {
     display: inline-block;
     position: relative;
-    cursor: pointer;
+    cursor: auto;
     border: 2px solid grey;
     border-radius: 4px;
     width: 250px;

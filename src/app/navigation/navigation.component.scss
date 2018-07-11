@@ -1,11 +1,11 @@
-div.container {
+.container {
     margin-top: 40px;
     margin-bottom: 24px;
     text-align: left;
     background-color: black;
 }
 
-div.container a {
+.container a {
     background-color: black;
     color: white;
     text-decoration: none;
@@ -17,7 +17,7 @@ div.container a {
     cursor: pointer;
 }
 
-div.pullUp a:before
+.pullUp a:before
 {
     position: absolute;
     width: 100%;
@@ -30,7 +30,7 @@ div.pullUp a:before
     transition: all 0.3s;
 }
 
-div.pullUp a:hover:before
+.pullUp a:hover:before
 {
     height: 100%;
 }
