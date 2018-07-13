@@ -1,5 +1,6 @@
-<div class="message" *ngIf="messageService.messages.length">
+<section class="message" *ngIf="messageService.messages.length">
   <h2 class="messageHead">Messages</h2>
   <button class="clear" (click)="messageService.clear()">clear</button>
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
-</div>
+  <noscript>Your browser is not compatible to view the page.</noscript>
+</section>

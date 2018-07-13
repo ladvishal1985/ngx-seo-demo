@@ -1,4 +1,4 @@
-<div class="addDiv" itemscope itemtype="http://schema.org/Things">
+<section class="addDiv" itemscope itemtype="http://schema.org/Things">
   <h2>My Heroes</h2>
   <br>
   <form class="form">
@@ -10,18 +10,21 @@
       Add
     </button>
   </form>
-</div>
+</section>
 <br>
-<div itemscope itemtype="http://schema.org/Product" class="thumbDiv">
-  <div class="divDisp" *ngFor="let hero of heroes;let i=index" (click)="heroImgSelectedEvent(hero)">
+<section itemscope itemtype="http://schema.org/Product" class="thumbDiv">
+  <section class="divDisp" *ngFor="let hero of heroes;let i=index" (click)="heroImgSelectedEvent(hero)">
     <br>
     <span itemprop="productID">{{hero.id}}</span>
     <br>
     <span itemprop="name">{{hero.name}}</span>
     <br>
     <a routerLink="/detail/{{hero.id}}">
-      <img itemprop="photo" class="imgHero" src="{{hero.image}}" width="248px" height="290px">
+      <figure>
+        <img itemprop="photo" class="imgHero" src="{{hero.image}}" width="248px" height="290px">
+      </figure>
     </a>
     <button type="button" class="btn btn-danger delete" title="Delete This Hero" (click)="delete(hero)">Delete</button>
-  </div>
-</div>
+  </section>
+  <noscript>Your browser is not compatible to view the page.</noscript>
+</section>
