@@ -55,9 +55,23 @@ const sitemap = sm.createSitemap({
   hostname: 'https://ngx-seo-demo.herokuapp.com',
   cacheTime: 1000 * 60 * 24,  // keep the sitemap cached for 24 hours
   urls: [
-    { url: '/dashboard/', changefreq: 'daily', priority: 0.3 },
-    { url: '/heroes/', changefreq: 'monthly', priority: 0.7 },
-    { url: '/detail/12' } // changefreq: 'weekly',  priority: 0.5 
+    { url: '/dashboard/', changefreq: 'daily', priority: 0.80, image: 'heroes.jpg', logo: 'seoTitleNew.jpg' },
+    { url: '/heroes/', changefreq: 'monthly', priority: 0.80 },
+    { url: '/detail/11/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/12/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/13/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/14/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/15/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/16/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/17/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/18/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/19/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/detail/20/', changefreq: 'monthly', priority: 0.64 },
+    { url: '/signup/', changefreq: 'monthly', priority: 0.50 },
+    { url: '/login/', changefreq: 'monthly', priority: 0.50 },
+    { url: '/about/', changefreq: 'monthly', priority: 0.50 },
+    { url: '/contact/', changefreq: 'monthly', priority: 0.50 }
+
   ]
 });
 

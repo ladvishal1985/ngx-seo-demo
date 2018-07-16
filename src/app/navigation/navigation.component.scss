@@ -1,8 +1,10 @@
 .container {
-    margin-top: 40px;
+    margin-top: 6px;
     margin-bottom: 24px;
     text-align: left;
     background-color: black;
+    // margin-left: 450px;
+    // margin-right: -200px;
 }
 
 .container a {
@@ -15,10 +17,13 @@
     position: relative;
     z-index: 0;
     cursor: pointer;
+    // margin-top: 60px;
+
 }
 
 .pullUp a:before
 {
+    // margin-right: -1000px;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -33,4 +38,8 @@
 .pullUp a:hover:before
 {
     height: 100%;
+}
+
+.logoDiv {
+    margin-left: 450px;
 }
