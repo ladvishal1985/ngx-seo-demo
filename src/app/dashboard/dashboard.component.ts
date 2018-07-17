@@ -17,9 +17,9 @@ export class DashboardComponent implements OnInit {
   constructor(private heroService: HeroService, private title: Title, private metaService: MetaService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.title.setTitle('Dashboard');
-    this.metaService.setMeta('title', 'Dashboard');
-    this.metaService.setMeta('description', 'Dashboard: Tours of Heroes');
+    this.title.setTitle('SEO Demo Headless: Dashboard');
+    this.metaService.setMeta('title', 'SEO Demo Headless: Dashboard');
+    this.metaService.setMeta('description', 'This is a sample SEO application for Headless Angular application and this is Dashboard page.');
     this.metaService.setMeta('theme-color', '#D4D4D4');
     this.getHeroes();
   }

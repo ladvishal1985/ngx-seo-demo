@@ -23,9 +23,9 @@ export class HeroDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle('Hero Detail');
-    this.metaService.setMeta('title', 'Hero Detail');
-    this.metaService.setMeta('description', 'Heroe Detail: Tours of Heroes');
+    this.title.setTitle('SEO Demo Headless: Heroes Details');
+    this.metaService.setMeta('title', 'SEO Demo Headless: Heroes Details');
+    this.metaService.setMeta('description', 'This is a sample SEO application for Headless Angular application and this is Heroes Details page.');
     this.getHero();
   }
 
