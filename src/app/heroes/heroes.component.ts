@@ -23,9 +23,9 @@ export class HeroesComponent implements OnInit {
   constructor(private heroService: HeroService, private title: Title, private metaService: MetaService) { }
 
   ngOnInit() {
-    this.title.setTitle('Heroes List');
-    this.metaService.setMeta('title', 'Heroes List');
-    this.metaService.setMeta('description', 'Heroes List: Tours of Heroes');
+    this.title.setTitle('SEO Demo Headless: Heroes List');
+    this.metaService.setMeta('title', 'SEO Demo Headless: Heroes List');
+    this.metaService.setMeta('description', 'This is a sample SEO application for Headless Angular application and this is Heroes List page.');
     this.getHeroes();
   }
 

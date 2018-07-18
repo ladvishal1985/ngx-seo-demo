@@ -14,9 +14,9 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('Log In');
-    this.meta.updateTag({ name: 'title', content: 'Log In' });
-    this.meta.updateTag({ name: 'description', content: 'Log-In Page' });
+    this.title.setTitle('SEO Demo Headless: Log-In');
+    this.meta.updateTag({ name: 'title', content: 'SEO Demo Headless: Log-In' });
+    this.meta.updateTag({ name: 'description', content: 'This is a sample SEO application for Headless Angular application and this is Log-In page.' });
   }
 
 }

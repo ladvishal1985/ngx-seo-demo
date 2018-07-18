@@ -55,7 +55,7 @@ const sitemap = sm.createSitemap({
   hostname: 'https://ngx-seo-demo.herokuapp.com',
   cacheTime: 1000 * 60 * 24,  // keep the sitemap cached for 24 hours
   urls: [
-    { url: '/dashboard/', changefreq: 'daily', priority: 0.80, image: 'heroes.jpg', logo: 'seoTitleNew.jpg' },
+    { url: '/dashboard/', changefreq: 'daily', priority: 0.80, image: 'backHeroNew1.jpg', logo: 'seoTitleNew.jpg' },
     { url: '/heroes/', changefreq: 'monthly', priority: 0.80 },
     { url: '/detail/11/', changefreq: 'monthly', priority: 0.64 },
     { url: '/detail/12/', changefreq: 'monthly', priority: 0.64 },

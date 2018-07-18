@@ -15,9 +15,9 @@ export class SignupComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('Sign Up');
-    this.meta.updateTag({ name: 'title', content: 'Sign Up' });
-    this.meta.updateTag({ name: 'description', content: 'Sign-Up Page' });
+    this.title.setTitle('SEO Demo Headless: Sign-Up');
+    this.meta.updateTag({ name: 'title', content: 'SEO Demo Headless: Sign-Up' });
+    this.meta.updateTag({ name: 'description', content: 'This is a sample SEO application for Headless Angular application and this is Sign-Up page.' });
   }
 
 }

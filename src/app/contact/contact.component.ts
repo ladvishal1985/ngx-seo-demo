@@ -11,9 +11,9 @@ export class ContactComponent implements OnInit {
   constructor(private title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('Contact Us');
-    this.meta.updateTag({ name: 'title', content: 'Contact Us' });
-    this.meta.updateTag({ name: 'description', content: 'Contact-Us Page' });
+    this.title.setTitle('SEO Demo Headless: Contact Us');
+    this.meta.updateTag({ name: 'title', content: 'SEO Demo Headless: Contact Us' });
+    this.meta.updateTag({ name: 'description', content: 'This is a sample SEO application for Headless Angular application and this is Contact Us page.' });
   }
 
 }
