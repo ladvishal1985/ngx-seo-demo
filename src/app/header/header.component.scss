@@ -1,17 +1,19 @@
-.leftpane {
-    width: 75%;
-    height: 100%;
-    float: left;
-    border-collapse: collapse;
-    background-color: black;
-}
-  
-.rightpane {
-    width: 25%;
-    height: 100%;
-    position: relative;
-    float: right;
-    border-collapse: collapse;
-    background-color: black;
+header {
+  display: flex;
+  flex-flow: column;
+  height: auto;
+  overflow: hidden;
+  background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
 }
 
+.leftpane {
+    width: 75%;
+}
+
+.rightpane {
+    width: 25%;
+}
+
+.logoDiv {
+  text-align: center;
+}
