@@ -84,6 +84,13 @@ app.get('/sitemap.xml', function (req, res, next) {
     res.send(xml);
   });
 });
+
+// Get robots.txt file
+app.get('/robots.txt', function (req, res) {
+  res.type('text/plain');
+  res.send("User-agent: *\nDisallow: /");
+});
+
 // Server static files from /browser
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 
