@@ -1,28 +1,22 @@
-.appTitle {
-    text-align: center;
-    font-size: 40px;
-    color: #999;
-    margin-bottom: 0;
-    font-weight: bold;
-    background-color: black;
-}
-
 .main-container {
-    // padding: 0 50px; 
-    margin: 0 auto;
-    min-height: 550px;   
-}
+  background-image: url('../assets/images/nature-cherry-blossoms-tre-l.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,.1);
+  overflow: auto;
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
 
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-  
-* {
-    box-sizing: border-box;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 }

@@ -1,6 +1,7 @@
 .mainDiv {
-    margin-top: 250px;
-    text-align: center;
+  position: relative;
+  text-align: center;
+  top: 130px;
 }
 
 .panel-heading {
@@ -13,11 +14,9 @@
 }
 
 .dashDiv{
-    width: 100%;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -85%);
+  width: 100%;
+  position: relative;
+  top: 100px;
 }
 
 .panel-body {
@@ -29,28 +28,27 @@
 .dash-widget {
     position: relative;
     outline: none;
-    // box-shadow: inset 0 0 0 200px rgba(0,0,0,.5);
     background-color:rgb(32, 11, 76) ;
     color: white;
     text-decoration: none;
-    
+
 }
 
 
 
-.box_1 { 
+.box_1 {
     display: block;
     position: relative;
     margin-bottom: 0px;
 }
 
-.box_2 { 
+.box_2 {
     display: block;
     position: relative;
     padding: 1px;
 }
 
-.box_3 { 
+.box_3 {
     display: block;
     position: relative;
     padding: 1px;
@@ -58,18 +56,8 @@
 }
 
 .label-inverse {
-    // background-color: #ffffff;
     color:  white;
     border-radius: 4px;
 }
 
-.heroImage {
-    margin-bottom: 50px;
-    margin-top: -110px;
-    margin-left: -20px;
-    margin-right: -15px;
-    position: relative;
-    text-align: center;
-    // width: 100%;
-}
 
