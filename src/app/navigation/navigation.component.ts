@@ -11,7 +11,7 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // console.log(this.abc.header[0].label);
+    
   }
 
 }

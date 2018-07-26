@@ -1,6 +1,6 @@
 .container-fluid {
-    margin-top: 200px;
-    width: 750px;
+    margin-top: 80px;
+    width: 570px;
     background-color: rgb(78, 146, 235);
     padding: 20px;
     border-radius: 4px;
@@ -12,10 +12,40 @@
 
 .headerContact {
     font-weight: bold;
+      
 }
 
 .submitContact {
     font-weight: bold;
     color: black;
     width: 150px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .row {
+        width: 385px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row {
+        width: 255px;
+        margin-top: 20px;
+    }
+    .container-fluid{
+        width: 75%;
+    }
+       
+}
+@media screen and (max-width: 320px) {
+    .row {
+        width: 205px;
+        margin-top: 20px;
+    }
+    .container-fluid{
+        width: 75%;
+    }
+       
 }

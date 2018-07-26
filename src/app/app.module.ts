@@ -19,7 +19,6 @@ import { MessageService } from './message.service';
 import { MessagesComponent } from './messages/messages.component';
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-// import { HeroViewComponent } from './hero-view/hero-view.component';
 import { HeroThumbComponent } from './hero-thumb/hero-thumb.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -29,6 +28,7 @@ import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -37,10 +37,6 @@ import { ContactComponent } from './contact/contact.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-
-    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
-    // and returns simulated server responses.
-    // Remove it when a real server is ready to receive requests.
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     )
@@ -52,7 +48,6 @@ import { ContactComponent } from './contact/contact.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    // HeroViewComponent,
     HeroThumbComponent,
     HeaderComponent,
     NavigationComponent,
@@ -61,7 +56,8 @@ import { ContactComponent } from './contact/contact.component';
     SignupComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NotFoundComponent
   ],
   providers: [HeroService, MessageService, MetaService],
   bootstrap: [AppComponent]

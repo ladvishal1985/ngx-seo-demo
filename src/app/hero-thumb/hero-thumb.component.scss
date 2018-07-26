@@ -53,7 +53,42 @@ button.add {
   border-top-right-radius: 4px;
 }
 
-.addForm {
-  margin-left: 500px;
-  margin-right: 500px;
+@media screen and (min-width: 1200px) {
+  .addForm {
+      margin-left: 200px;
+      margin-right: 200px;
+      
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .addForm {
+      margin-left: 200px;
+      margin-right: 200px;
+      
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .addForm {
+      margin-left: 200px;
+      margin-right: 200px;      
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .addForm {
+    margin-left: 100px;
+    margin-right: 100px;      
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  .addForm {
+    margin-left: 100px;
+    margin-right: 100px;
+      
+  }
 }

@@ -17,6 +17,7 @@
   width: 100%;
   position: relative;
   top: 100px;
+
 }
 
 .panel-body {
@@ -33,8 +34,6 @@
     text-decoration: none;
 
 }
-
-
 
 .box_1 {
     display: block;
@@ -61,3 +60,44 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+    .dashDiv {
+        margin-top: -150px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .dashDiv {
+        margin-top: -150px;
+        width: 85%;
+        margin-left: 30px;   
+    }
+    .dash-widget{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dashDiv {
+        margin-top: -200px;
+        width: 100%;
+        margin-left: 10px;    
+    }
+    .dash-widget{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }    
+}
+
+@media screen and (max-width: 320px) {
+    .dashDiv {
+        margin-top: -200px;
+        width: 120%;
+        margin-left: -25px;    
+    }
+    .dash-widget{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }    
+}

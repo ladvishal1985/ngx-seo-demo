@@ -1,7 +1,7 @@
 .jumbotron {
     background-color: rgb(78, 146, 235);
     color: black;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 h2{
@@ -36,4 +36,50 @@ h2{
 
 .missionLogo {
     text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .jumbotron{
+        margin-top: -70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .companyDiv {
+        margin-left: 100px;
+        
+    }
+    .companyLogo{
+        margin-left: -20px;
+    }
+    .missionDiv{
+        margin-left: 40px;
+    }
+    .missionLogo{
+        margin-left: 100px;
+    }
+    .jumbotron{
+        margin-top: -70px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .companyDiv {
+        margin-left: 100px;
+        
+    }
+    .companyLogo{
+        margin-left: 40px;
+    }
+    .missionDiv{
+        margin-left: 40px;
+    }
+    .missionLogo{
+        margin-left: 80px;
+    }
+    .jumbotron{
+        margin-top: -70px;
+    }
+    
 }
