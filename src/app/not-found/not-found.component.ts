@@ -18,8 +18,6 @@ export class NotFoundComponent implements OnInit {
     var element2 = <HTMLInputElement>document.getElementById("data2");
     element2.hidden = true;
 
-    var element3 = <HTMLInputElement>document.getElementById("data3");
-    element3.hidden = true;
   }
 
   backToHome() {
