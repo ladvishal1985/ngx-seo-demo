@@ -1,0 +1,98 @@
+* {
+    font-family: verdana;
+    color: black;
+    margin-top: 40px;
+}
+
+.title-404 {
+    font-size: 80px;
+    display: block;
+    text-align: center;
+}
+
+.other-404 {
+    margin-top: 30px;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.other1-404 {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.error-404 {
+    font-size: 200px;
+    display: block;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .btn {
+      margin-left: 510px;
+      
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn {
+      margin-left: 430px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .btn {
+        margin-left: 320px;
+    }
+    .error-404{
+        font-size: 70px;
+    }
+    .title-404{
+        font-size: 70px;
+    }
+    .other-404{
+        font-size: 20px;
+    }
+     
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        margin-left: 60px;
+    }
+    .error-404{
+        font-size: 70px;
+    }
+    .title-404{
+        font-size: 70px;
+    }
+    .other-404{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .btn {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .error-404{
+        font-size: 70px;
+    }
+    .title-404{
+        font-size: 40px;
+    }
+    .other-404{
+        font-size: 20px;
+    }
+    
+}

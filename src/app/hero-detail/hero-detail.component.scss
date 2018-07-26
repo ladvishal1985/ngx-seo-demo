@@ -58,3 +58,104 @@
     border-collapse: collapse;
 }
 
+  @media screen and (max-width: 1200px) {
+    .leftpane {
+        margin-left: 25px;
+    }
+}
+
+  @media screen and (max-width: 992px) {
+    .leftpane {
+        margin-left: 200px;
+    }
+    .rightpane {
+        margin-left: -300px;
+        margin-top: 600px;
+     }
+     .idLabel{
+        margin-left: -350px;
+     }
+     .ratingLabel{
+        margin-left: -350px;
+     }
+     .nameLabel{
+        margin-left: -350px;
+     }
+     .descriptionLabel{
+        margin-left: -350px;;
+        width: auto;
+     }
+     .buttonFamily{
+        margin-left: -350px;
+     }
+     h2{
+        margin-left: -350px;
+     }
+  }
+
+  @media screen and (max-width: 480px) {
+    .leftpane {
+        margin-left:15px;     
+    }
+    .imageHero{
+        width: auto;
+    }
+    .rightpane {
+   
+        margin-left: -300px;
+        margin-top: 600px;
+     }
+     .idLabel{
+        margin-left: -200px;
+     }
+     .ratingLabel{
+        margin-left: -200px;
+     }
+     .nameLabel{
+        margin-left: -200px;
+     }
+     .descriptionLabel{
+        margin-left: -200px;;
+        width: auto;
+     }
+     .buttonFamily{
+        margin-left: -200px;
+     }
+     h2{
+        margin-left: -200px;
+     }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .leftpane {
+        
+      margin-left: -15px;
+    }
+    .imageHero{
+        width:250px;
+        height: 300px;
+    }  
+    .rightpane {
+        margin-left: -200px;
+        margin-top: 400px;
+     }
+     .idLabel{
+        margin-left: -150px;
+     }
+     .ratingLabel{
+        margin-left: -150px;
+     }
+     .nameLabel{
+        margin-left: -150px;
+     }
+     .descriptionLabel{
+        margin-left: -150px;;
+        width: auto;
+     }
+     .buttonFamily{
+        margin-left: -150px;
+     }
+     h2{
+        margin-left: -150px;
+     }   
+  }

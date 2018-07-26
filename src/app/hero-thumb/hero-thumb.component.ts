@@ -27,7 +27,6 @@ export class HeroThumbComponent implements OnInit {
   }
 
   public heroImgSelectedEvent(heroImage: Hero): void {
-    // this.heroService.setData(i);
     this.heroImgSelected.emit(heroImage);
   }
 

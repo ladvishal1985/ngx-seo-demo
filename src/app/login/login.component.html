@@ -1,22 +1,28 @@
-<section itemscope itemtype="http://schema.org/Text" class="login-form">
-  <form>
-    <h2 itemprop="name" class="text-center">Log in</h2>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Username" required="required">
-    </div>
-    <div class="form-group">
-      <input type="password" class="form-control" placeholder="Password" required="required">
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary">Log In</button>
-    </div>
-    <div class="clearfix">
-      <label class="checkbox-inline">
-        <input type="checkbox"> Remember me</label>
-    </div>
-  </form>
-  <p class="text-center" itemprop="children" itemscope itemtype="http://schema.org/Product">
-    <a itemprop="url" class="signupURL" routerLink="{{linkConfigObj.header.signup.route}}">Create an Account</a>
-  </p>
-  <noscript>Your browser is not compatible to view the page.</noscript>
+<section class="login-form">
+  <section itemscope itemtype="http://schema.org/Text" class="login-form">
+    <form>
+      <h2 itemprop="name">Log In</h2>
+      <br>
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg">Log In</button>
+      </div>
+      <div class="clearfix">
+        <label class="checkbox-inline">
+          <input type="checkbox"> Remember me</label>
+      </div>
+
+    </form>
+    <section class="hint-text">
+      <button class="loginButton">
+        <a itemprop="url" class="signupURL" routerLink="{{linkConfigObj.header.signup.route}}">Create an Account</a>
+      </button>
+    </section>
+    <noscript>Your browser is not compatible to view the page.</noscript>
+  </section>
 </section>

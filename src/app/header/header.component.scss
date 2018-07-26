@@ -8,6 +8,7 @@ header {
 
 .leftpane {
     width: 75%;
+    margin-left: 0px;
 }
 
 .rightpane {
@@ -16,4 +17,59 @@ header {
 
 .logoDiv {
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroLogoTag {
+      width:550px;
+  }
+  .leftpane{
+    width:100%;
+  }
+  .rightpane{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .heroLogoTag {
+      width:550px;
+  }
+  .leftpane{
+    width:100%;
+    margin-left: -105px;
+  }
+  .rightpane{
+    width: 100%;
+   margin-top:-50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroLogoTag {
+      width:450px;
+  }
+  .leftpane{
+    width:100%;
+    margin-left: -15px;
+  }
+  .rightpane{
+    width: 100%;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .heroLogoTag {
+      width:300px;
+  }
+  .leftpane{
+    width:100%;
+    margin-left: 35px;
+  }
+  .rightpane{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: -30px;
+  }
 }
