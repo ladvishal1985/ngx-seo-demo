@@ -17,8 +17,10 @@ enableProdMode();
 
 // Express server
 const app = express();
+const forceSsl = require('force-ssl-heroku');
 
 app.use(compression());
+app.use(forceSsl);
 
 const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
