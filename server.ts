@@ -99,6 +99,15 @@ app.get('*', (req, res) => {
   res.render(join(DIST_FOLDER, 'browser', 'index.html'), { req });
 });
 
+app.use(function (err, req, res, next) {
+  console.error(err);
+  res.status(500).send('Internal server error!');
+});
+
+app.use(function (err, req, res, next) {
+  res.redirect(301, 'http://dry-sea-47434.herokuapp.com');
+});
+
 // Start up the Node server
 app.listen(PORT, () => {
   console.log(`Node server listening on http://localhost:${PORT}`);
