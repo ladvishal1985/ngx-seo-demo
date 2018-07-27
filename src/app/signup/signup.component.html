@@ -1,4 +1,4 @@
-<section itemscope itemtype="http://schema.org/Text" class="signup-form">
+<section itemscope itemtype="http://schema.org/Person" class="signup-form">
   <form>
     <h2 itemprop="name">Sign Up</h2>
     <p itemprop="description">Please fill in this form to create an account!</p>
@@ -22,7 +22,7 @@
   <section class="hint-text">
     <label itemprop="name">Already have an account? </label>
     <button class="loginButton">
-      <a itemprop="url" routerLink="{{linkConfigObj.header.login.route}}">Log In here</a>
+      <a itemprop="url" routerLink="{{linkConfigObj.header.login.route}}" href="{{linkConfigObj.header.login.route}}">Log In here</a>
     </button>
   </section>
   <noscript>Your browser is not compatible to view the page.</noscript>

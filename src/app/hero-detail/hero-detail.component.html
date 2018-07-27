@@ -1,18 +1,18 @@
-<section itemscope itemtype="http://schema.org/Product" class="leftpane">
+<section itemscope itemtype="http://schema.org/Person" class="leftpane">
   <section *ngIf="hero">
     <figure>
-    <img itemprop="photo" class="imageHero" src="{{hero.image}}" width="500" height="500">
+    <img itemprop='image' itemscope itemtype='http://schema.org/ImageObject' class="imageHero" src="{{hero.image}}" width="500" height="500">
   </figure>
   </section>
 </section>
-<section itemscope itemtype="http://schema.org/Product" class="rightpane">
+<section itemscope itemtype="http://schema.org/Person" class="rightpane">
   <section *ngIf="hero">
     <h2 itemprop="name">
       {{ hero.name | uppercase }} Details
     </h2>
     <section>
       <label class="idLabel">ID:
-        <b itemprop="productID">
+        <b itemprop="globalLocationNumber">
           {{hero.id}}
         </b>
       </label>
@@ -24,7 +24,7 @@
         </b>
       </label>
     </section>
-    <section itemprop="children" itemscope itemtype="http://schema.org/AggregateRating">
+    <section itemscope itemtype="http://schema.org/AggregateRating">
       <label class="ratingLabel">Rating:
         <b itemprop="ratingValue">
           {{hero.rating}}
