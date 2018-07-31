@@ -1,8 +1,9 @@
 <section itemscope itemtype="http://schema.org/Person" class="leftpane">
   <section *ngIf="hero">
     <figure>
-    <img itemprop='image' itemscope itemtype='http://schema.org/ImageObject' class="imageHero" src="{{hero.image}}" width="500" height="500">
-  </figure>
+      <img itemprop='image' itemscope itemtype='http://schema.org/ImageObject' class="imageHero" src="{{hero.image}}" width="500"
+        height="500">
+    </figure>
   </section>
 </section>
 <section itemscope itemtype="http://schema.org/Person" class="rightpane">
@@ -32,9 +33,11 @@
       </label>
     </section>
     <div>
+
       <label class="descriptionLabel">Description:
         <b itemprop="description">{{hero.description}}</b>
       </label>
+
     </div>
   </section>
   <br>

@@ -21,7 +21,7 @@ export class NotFoundComponent implements OnInit {
   }
 
   backToHome() {
-    window.location.href = '/dashboard';
+    window.location.href = '/';
   }
 
 
