@@ -13,64 +13,83 @@ header {
 
 .rightpane {
     width: 25%;
+    text-align: right;
 }
 
 .logoDiv {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+// @media screen and (max-width: 1200px) {
+//   .heroLogoTag {
+//       width:550px;
+//   }
+//   .leftpane{
+//     width:100%;
+//   }
+//   .rightpane{
+//     width: 100%;
+//   }
+// }
+
+// @media screen and (max-width: 992px) {
+//   .heroLogoTag {
+//       width:550px;
+//   }
+//   .leftpane{
+//     width:100%;
+//     margin-left: -40px;
+//   }
+//   .rightpane{
+//     width: 100%;
+//    margin-top:-50px;
+//   }
+// }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .heroLogoTag {
-      width:550px;
-  }
-  .leftpane{
-    width:100%;
-  }
-  .rightpane{
-    width: 100%;
-  }
+          width:350px;
+      }
+      .leftpane{
+        width:75%;
+        margin-left: 50px;
+      }
+      .rightpane{
+        width: 65%;
+        margin-left: 60px;
+      }
 }
 
-@media screen and (max-width: 992px) {
-  .heroLogoTag {
-      width:550px;
-  }
-  .leftpane{
-    width:100%;
-    margin-left: -40px;
-  }
-  .rightpane{
-    width: 100%;
-   margin-top:-50px;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .heroLogoTag {
-      width:450px;
-  }
-  .leftpane{
-    width:100%;
-    margin-left: -15px;
-  }
-  .rightpane{
-    width: 100%;
-    margin-top: -50px;
-  }
-}
 
-@media screen and (max-width: 320px) {
-  .heroLogoTag {
-      width:300px;
-  }
-  .leftpane{
-    width:100%;
-    margin-left: 35px;
-  }
-  .rightpane{
-    width: 100%;
-    margin-top: 10px;
-    margin-left: -30px;
-  }
-}
+
+// @media screen and (max-width: 480px) {
+//   .heroLogoTag {
+//       width:450px;
+//   }
+//   .leftpane{
+//     width:100%;
+//     margin-left: -15px;
+//   }
+//   .rightpane{
+//     width: 100%;
+//     margin-top: -50px;
+//   }
+// }
+
+// @media screen and (max-width: 320px) {
+//   .heroLogoTag {
+//       width:300px;
+//   }
+//   .leftpane{
+//     width:100%;
+//     margin-left: 35px;
+//   }
+//   .rightpane{
+//     width: 100%;
+//     margin-top: 10px;
+//     margin-left: -30px;
+//   }
+// }
 

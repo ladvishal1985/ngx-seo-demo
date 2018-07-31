@@ -2,7 +2,7 @@ export const LinksConfigConst = {
     header: {
         dashboard: {
             'label': 'Dashboard',
-            'route': '/dashboard'
+            'route': ''
         },
         heroes: {
             'label': 'Heroes',

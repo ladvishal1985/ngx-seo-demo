@@ -23,17 +23,22 @@ export class HeroDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle('SEO Demo Headless: Heroes Details');
-    this.metaService.setMeta('title', 'SEO Demo Headless: Heroes Details');
-    this.metaService.setMeta('description', 'This is a sample SEO application for Headless Angular application and this is Heroes Details page.');
+    // this.title.setTitle('SEO Demo Headless: Heroes Details');
+    // this.metaService.setMeta('title', 'SEO Demo Headless: Heroes Details');
+    // this.metaService.setMeta('description', 'This is a sample SEO application for Headless Angular application and this is Heroes Details page.');
     this.getHero();
   }
 
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.heroService.getHero(id)
-      .subscribe(hero => this.hero = hero);
-  }
+      .subscribe((hero) => {
+        this.hero = hero;
+        this.title.setTitle(`SEO Demo Headless: Heroes Details: ${this.hero.name}`);
+        this.metaService.setMeta('title', `SEO Demo Headless: Heroes Details: ${this.hero.name}`);
+        this.metaService.setMeta('description', `This is a sample SEO application for Headless Angular application and this is Heroes Details page: ${this.hero.name}`);
+  });
+}
 
   goBack(): void {
     this.location.back();

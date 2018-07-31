@@ -58,15 +58,16 @@
     border-collapse: collapse;
 }
 
-  @media screen and (max-width: 1200px) {
-    .leftpane {
-        margin-left: 25px;
-    }
-}
+//   @media screen and (max-width: 1200px) {
+//     .leftpane {
+//         margin-left: 25px;
+//     }
+// }
 
   @media screen and (max-width: 992px) {
     .leftpane {
-        margin-left: 200px;
+        position: relative;
+        right: 5%;  
     }
     .rightpane {
         margin-left: -300px;
@@ -93,69 +94,108 @@
      }
   }
 
-  @media screen and (max-width: 480px) {
-    .leftpane {
-        margin-left:15px;     
-    }
-    .imageHero{
-        width: auto;
-    }
-    .rightpane {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+            .leftpane {
+                position: relative;
+                right: 5%;   
+            }
+            .imageHero{
+                width: auto;
+            }
+            .rightpane { 
+                margin-top: 600px;
+             }
+             .idLabel{
+                position: relative;
+                right: 100%;  
+             }
+             .ratingLabel{
+                position: relative;
+                right: 100%;  
+             }
+             .nameLabel{
+                position: relative;
+                right: 100%;  ;
+             }
+             .descriptionLabel{
+                position: relative;
+                right: 100%;  
+                width: auto;
+             }
+             .buttonFamily{
+                position: relative;
+                right: 100%;  
+             }
+             h2{
+                position: relative;
+                right: 100%;  
+             }
+}
+
+
+//   @media screen and (max-width: 480px) {
+//     .leftpane {
+//         margin-left:15px;     
+//     }
+//     .imageHero{
+//         width: auto;
+//     }
+//     .rightpane {
    
-        margin-left: -300px;
-        margin-top: 600px;
-     }
-     .idLabel{
-        margin-left: -200px;
-     }
-     .ratingLabel{
-        margin-left: -200px;
-     }
-     .nameLabel{
-        margin-left: -200px;
-     }
-     .descriptionLabel{
-        margin-left: -200px;;
-        width: auto;
-     }
-     .buttonFamily{
-        margin-left: -200px;
-     }
-     h2{
-        margin-left: -200px;
-     }
-  }
+//         margin-left: -300px;
+//         margin-top: 600px;
+//      }
+//      .idLabel{
+//         margin-left: -200px;
+//      }
+//      .ratingLabel{
+//         margin-left: -200px;
+//      }
+//      .nameLabel{
+//         margin-left: -200px;
+//      }
+//      .descriptionLabel{
+//         margin-left: -200px;;
+//         width: auto;
+//      }
+//      .buttonFamily{
+//         margin-left: -200px;
+//      }
+//      h2{
+//         margin-left: -200px;
+//      }
+//   }
   
-  @media screen and (max-width: 320px) {
-    .leftpane {
+//   @media screen and (max-width: 320px) {
+//     .leftpane {
         
-      margin-left: -15px;
-    }
-    .imageHero{
-        width:250px;
-        height: 300px;
-    }  
-    .rightpane {
-        margin-left: -200px;
-        margin-top: 400px;
-     }
-     .idLabel{
-        margin-left: -150px;
-     }
-     .ratingLabel{
-        margin-left: -150px;
-     }
-     .nameLabel{
-        margin-left: -150px;
-     }
-     .descriptionLabel{
-        margin-left: -150px;;
-        width: auto;
-     }
-     .buttonFamily{
-        margin-left: -150px;
-     }
-     h2{
-        margin-left: -150px;
-     }   
-  }
+//       margin-left: -15px;
+//     }
+//     .imageHero{
+//         width:250px;
+//         height: 300px;
+//     }  
+//     .rightpane {
+//         margin-left: -200px;
+//         margin-top: 400px;
+//      }
+//      .idLabel{
+//         margin-left: -150px;
+//      }
+//      .ratingLabel{
+//         margin-left: -150px;
+//      }
+//      .nameLabel{
+//         margin-left: -150px;
+//      }
+//      .descriptionLabel{
+//         margin-left: -150px;;
+//         width: auto;
+//      }
+//      .buttonFamily{
+//         margin-left: -150px;
+//      }
+//      h2{
+//         margin-left: -150px;
+//      }   
+//   }
