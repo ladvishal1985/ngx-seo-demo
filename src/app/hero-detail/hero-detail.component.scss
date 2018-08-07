@@ -23,7 +23,7 @@
 }
 
 .descriptionLabel {
-    display: inline-block;
+    display: block;
     width: 50%;
     margin: .5em 0;
     color: black;
@@ -32,7 +32,6 @@
 
 .imageHero {
     border-radius: 4px;
-    margin-left: 50px;
 }
 
 .buttonFamily {
@@ -58,144 +57,142 @@
     border-collapse: collapse;
 }
 
-//   @media screen and (max-width: 1200px) {
-//     .leftpane {
-//         margin-left: 25px;
-//     }
-// }
-
-  @media screen and (max-width: 992px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .main{
+        overflow-X: hidden;
+     
+        
+    }
     .leftpane {
         position: relative;
-        right: 5%;  
+        left: 170px; 
+    
+    }
+    .imageHero{
+        width: auto;
     }
     .rightpane {
-        margin-left: -300px;
-        margin-top: 600px;
+        margin-top: 700px;
+        font-size: 30px;
      }
      .idLabel{
-        margin-left: -350px;
+        position: relative;
+        right: 250px;
      }
      .ratingLabel{
-        margin-left: -350px;
+        position: relative;
+        right: 250px;
+        display: inline;
      }
      .nameLabel{
-        margin-left: -350px;
+        position: relative;
+        right: 250px;
+        display: inline;
      }
      .descriptionLabel{
-        margin-left: -350px;;
+        margin-left: -250px;
         width: auto;
+        
      }
      .buttonFamily{
-        margin-left: -350px;
+        position: relative;
+        margin-bottom: 100px;
+        right: 250px;
      }
-     h2{
-        margin-left: -350px;
+     .heading {
+        position: relative;
+        right: 240px;
      }
   }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+            .main{
+                overflow-X: hidden;   
+            }
+
             .leftpane {
                 position: relative;
-                right: 5%;   
+                left: 8px;    
             }
+
             .imageHero{
                 width: auto;
             }
+
             .rightpane { 
                 margin-top: 600px;
+                left: 10px;
+                display: inline-block;
+
              }
              .idLabel{
                 position: relative;
-                right: 100%;  
+                right: 210px;
+                white-space: nowrap;
              }
              .ratingLabel{
                 position: relative;
-                right: 100%;  
+                right: 210px;
+                white-space: nowrap;
              }
              .nameLabel{
                 position: relative;
-                right: 100%;  ;
+                right: 210px;
+                white-space: nowrap;
              }
              .descriptionLabel{
-                position: relative;
-                right: 100%;  
+                margin-left: -215px;
                 width: auto;
              }
              .buttonFamily{
                 position: relative;
-                right: 100%;  
+                margin-bottom: 30px;
+                right: 210px;
              }
-             h2{
+             .heading {
                 position: relative;
-                right: 100%;  
+                right: 210px;
+                display: inline-block;
+                white-space: nowrap;
              }
 }
-
-
-//   @media screen and (max-width: 480px) {
-//     .leftpane {
-//         margin-left:15px;     
-//     }
-//     .imageHero{
-//         width: auto;
-//     }
-//     .rightpane {
-   
-//         margin-left: -300px;
-//         margin-top: 600px;
-//      }
-//      .idLabel{
-//         margin-left: -200px;
-//      }
-//      .ratingLabel{
-//         margin-left: -200px;
-//      }
-//      .nameLabel{
-//         margin-left: -200px;
-//      }
-//      .descriptionLabel{
-//         margin-left: -200px;;
-//         width: auto;
-//      }
-//      .buttonFamily{
-//         margin-left: -200px;
-//      }
-//      h2{
-//         margin-left: -200px;
-//      }
-//   }
   
-//   @media screen and (max-width: 320px) {
-//     .leftpane {
-        
-//       margin-left: -15px;
-//     }
-//     .imageHero{
-//         width:250px;
-//         height: 300px;
-//     }  
-//     .rightpane {
-//         margin-left: -200px;
-//         margin-top: 400px;
-//      }
-//      .idLabel{
-//         margin-left: -150px;
-//      }
-//      .ratingLabel{
-//         margin-left: -150px;
-//      }
-//      .nameLabel{
-//         margin-left: -150px;
-//      }
-//      .descriptionLabel{
-//         margin-left: -150px;;
-//         width: auto;
-//      }
-//      .buttonFamily{
-//         margin-left: -150px;
-//      }
-//      h2{
-//         margin-left: -150px;
-//      }   
-//   }
+  @media screen and (max-width: 320px) {
+            .leftpane {
+                position: relative;
+                left: 5px;   
+            }
+            .imageHero{
+                width: auto;
+                height:400px;
+            }
+
+            .rightpane {
+                margin-left: -200px;
+                margin-top: 500px;
+            }
+            .idLabel{
+                position: relative;
+                right: 150px;
+            }
+            .ratingLabel{
+                position: relative;
+                right: 150px;  
+            }
+            .nameLabel{
+                position: relative;
+                right: 150px;
+            }
+            .descriptionLabel{
+                margin-left: -155px;
+                width: auto;
+            }
+            .buttonFamily{
+                position: relative;
+                right: 150px;
+            }
+            .heading {
+                position: relative;
+                right: 150px;
+            }
+  }
