@@ -1,4 +1,6 @@
 @import '~bootstrap/dist/css/bootstrap.css';
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+
 /* Master Styles */
 h1 {
   color: #369;

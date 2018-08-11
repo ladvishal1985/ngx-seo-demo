@@ -1,49 +1,54 @@
-<section itemscope itemtype="http://schema.org/Person" class="leftpane">
-  <section *ngIf="hero">
-    <figure>
-      <img itemprop='image' itemscope itemtype='http://schema.org/ImageObject' class="imageHero" src="{{hero.image}}" width="500"
-        height="500">
-    </figure>
+<div class="main">
+  <section itemscope itemtype="http://schema.org/Person" class="leftpane col-sm-12">
+    <section *ngIf="hero">
+      <figure>
+        <img itemprop='image' itemscope itemtype='http://schema.org/ImageObject' class="imageHero img-responsive" src="{{hero.image}}"
+          width="500" height="500">
+      </figure>
+    </section>
   </section>
-</section>
-<section itemscope itemtype="http://schema.org/Person" class="rightpane">
-  <section *ngIf="hero">
-    <h2 itemprop="name">
-      {{ hero.name | uppercase }} Details
-    </h2>
-    <section>
-      <label class="idLabel">ID:
-        <b itemprop="globalLocationNumber">
-          {{hero.id}}
-        </b>
-      </label>
-    </section>
-    <section>
-      <label class="nameLabel">Name:
-        <b itemprop="name">
-          {{hero.name}}
-        </b>
-      </label>
-    </section>
-    <section itemscope itemtype="http://schema.org/AggregateRating">
-      <label class="ratingLabel">Rating:
-        <b itemprop="ratingValue">
-          {{hero.rating}}
-        </b>
-      </label>
-    </section>
-    <div>
+  <section itemscope itemtype="http://schema.org/Person" class="rightpane">
+    <section *ngIf="hero">
+      <div class="heading">
+        <h2 itemprop="name col-sm-6">
+          {{ hero.name | uppercase }} Details
+        </h2>
+      </div>
+      <section>
+        <label class="idLabel col-sm-6">ID:
+          <b itemprop="globalLocationNumber">
+            {{hero.id}}
+          </b>
+        </label>
+      </section>
+      <section>
+        <label class="nameLabel col-sm-6">Name:
+          <b itemprop="name">
+            {{hero.name}}
+          </b>
+        </label>
+      </section>
+      <section itemscope itemtype="http://schema.org/AggregateRating">
+        <label class="ratingLabel col-sm-6">Rating:
+          <b itemprop="ratingValue">
+            {{hero.rating}}
+          </b>
+        </label>
+      </section>
+      <div>
 
-      <label class="descriptionLabel">Description:
-        <b itemprop="description">{{hero.description}}</b>
-      </label>
+        <label class="descriptionLabel col-sm-12">Description:
+          <b itemprop="description">{{hero.description}}</b>
+        </label>
 
-    </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary buttonFamily" title="Go Back" (click)="goBack()">Go Back</button>
+    <br>
+    <noscript>Your browser is not compatible to view the page.</noscript>
   </section>
-  <br>
-  <br>
-  <br>
-  <button type="button" class="btn btn-primary buttonFamily" title="Go Back" (click)="goBack()">Go Back</button>
-  <br>
-  <noscript>Your browser is not compatible to view the page.</noscript>
-</section>
+</div>
